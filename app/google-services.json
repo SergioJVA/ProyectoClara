@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "313983480822",
+    "project_id": "autenticacion-99210",
+    "storage_bucket": "autenticacion-99210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313983480822:android:21e7115f79b9811188cdd7",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbVNAA4IR5WAuwKNxkiaK4TtnyTBvqNjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313983480822:android:ac6e882945b5650888cdd7",
+        "android_client_info": {
+          "package_name": "com.example.proyectoClara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbVNAA4IR5WAuwKNxkiaK4TtnyTBvqNjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313983480822:android:c4f851c3eed93e4488cdd7",
+        "android_client_info": {
+          "package_name": "com.example.proyectoclara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbVNAA4IR5WAuwKNxkiaK4TtnyTBvqNjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313983480822-cp20e1n90cbk3mhmd6jl8vc2qnt88rnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
