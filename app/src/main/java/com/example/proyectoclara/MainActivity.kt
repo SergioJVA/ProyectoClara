@@ -66,7 +66,15 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener{
                     // Si la autenticacion tuvo exito:
                     if (it.isSuccessful){
-                        getCurrentUserPrivileges()
+                        db.collection("usuarios").document(binding.correo.toString()).get()
+                            .addOnSuccessListener { documentSnapshot ->
+                                if (documentSnapshot.exists()) {
+                                    val privilegios = documentSnapshot["privilegios"].toString()
+                                    if (privilegios == "admin") {
+                                        binding1.mostrarUsuario.visibility = View.VISIBLE
+                                    }
+                                }
+                            }
                         // Obtengo los datos de la base de datos y cambio de activity
                         val intent = Intent(this, InicioActivity::class.java)
                         startActivity(intent)
@@ -85,19 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun getCurrentUserPrivileges() {
-        val currentUser = auth.currentUser
-        val reference = db.collection("usuarios").document(currentUser.toString())
-        reference.get().addOnSuccessListener { snapshot ->
-            val privilegios = snapshot.toObject(ItemsUsuarios::class.java)?.Privilegios
-            if (privilegios != null) {
-                Toast.makeText(this,privilegios, Toast.LENGTH_SHORT).show()
-                Log.d("User Privileges", privilegios)
-            }
-        }.addOnFailureListener { exception ->
-            Log.e("Error", "Error al obtener los privilegios del usuario", exception)
-        }
-    }
+
 
 
 

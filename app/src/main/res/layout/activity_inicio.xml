@@ -7,6 +7,7 @@
     android:background="@drawable/loginfondo"
     tools:context=".InicioActivity">
 
+
     <Button
         android:id="@+id/cerrarSesion"
         android:layout_width="wrap_content"
@@ -38,6 +39,7 @@
         android:layout_marginBottom="88dp"
         android:background="#00FFFFFF"
         android:text="Mostrar Usuarios"
+        android:visibility="gone"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/cerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
